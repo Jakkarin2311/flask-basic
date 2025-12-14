@@ -31,11 +31,11 @@ def hello(name):
 def greething(name, age):
     return f'<h1>My name is {name}. I am {age} years old.</h1>'
 
-app.route('/calculator/addition/<int:a>/<int:b>')
+@app.route('/calculator/addition/<int:a>/<int:b>')
 def addition(a, b):
     return f'<h1>{a} + {b} = {a + b}</h1>'
 
-app.route('/calculator/subtraction/<int:a>/<int:b>')
+@app.route('/calculator/subtraction/<int:a>/<int:b>')
 def addition(a, b):
     return f'<h1>{a} - {b} = {a - b}</h1>'
 
